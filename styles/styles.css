@@ -1,0 +1,176 @@
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(222, 26%, 31%);
+}
+main .calc-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
+  width: 100%;
+  height: 100vh;
+}
+main .calc-wrapper .calc-theme-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+}
+main .calc-wrapper .calc-theme-container .calc-theme-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main .calc-wrapper .calc-theme-container .calc-theme-wrapper .theme-number {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+  gap: 1rem;
+}
+main .calc-wrapper .calc-theme-container .calc-theme-wrapper .theme-number span {
+  font-size: 0.9rem;
+}
+main .calc-wrapper .calc-theme-container .calc-theme-wrapper .theme-switches-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+main .calc-wrapper .calc-theme-container .calc-theme-wrapper .theme-switches-container span {
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+main .calc-wrapper .calc-theme-container .calc-theme-wrapper .theme-switches-container .switch-wrapper {
+  display: flex;
+  background-color: hsl(223, 31%, 20%);
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+  gap: 0.35rem;
+  border-radius: 1rem;
+}
+main .calc-wrapper .calc-theme-container .calc-theme-wrapper .theme-switches-container .switch-wrapper button {
+  background-color: hsl(6, 63%, 50%);
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  border: none;
+  outline: none;
+}
+main .calc-wrapper .calc-theme-container .calc-theme-wrapper .theme-switches-container .switch-wrapper #themeTwo,
+main .calc-wrapper .calc-theme-container .calc-theme-wrapper .theme-switches-container .switch-wrapper #themeThree {
+  opacity: 0;
+}
+main .calc-wrapper .calc-result-wrapper {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 5.5rem;
+  border-radius: 0.8rem;
+  padding: 2rem 1.5rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 36%, 15%);
+}
+main .calc-wrapper .calc-result-wrapper h2 {
+  font-size: 2.5rem;
+}
+main .calc-wrapper .calc-buttons-wrapper {
+  background-color: hsl(223, 31%, 20%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 0.8rem;
+  width: 100%;
+  padding: 1.5rem;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+}
+main .calc-wrapper .calc-buttons-wrapper button {
+  display: flex;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1.2rem 1rem 0.75rem;
+  font-weight: 700;
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(224, 28%, 35%);
+  box-shadow: 0px 4px 0px 0px hsl(28, 16%, 65%);
+}
+main .calc-wrapper .calc-buttons-wrapper button:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+main .calc-wrapper .calc-buttons-wrapper .number {
+  font-size: 2rem;
+}
+main .calc-wrapper .calc-buttons-wrapper .operator {
+  font-size: 2rem;
+}
+main .calc-wrapper .calc-buttons-wrapper #delete,
+main .calc-wrapper .calc-buttons-wrapper #reset {
+  box-shadow: 0px 4px 0px 0px hsl(224, 28%, 35%);
+  background-color: hsl(225, 21%, 49%);
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+}
+main .calc-wrapper .calc-buttons-wrapper #delete:hover,
+main .calc-wrapper .calc-buttons-wrapper #reset:hover {
+  background-color: hsl(225, 31%, 59%);
+}
+main .calc-wrapper .calc-buttons-wrapper #reset {
+  padding: 1.25rem;
+  grid-column: 1/3;
+}
+main .calc-wrapper .calc-buttons-wrapper #equal {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0px 4px 0px 0px hsl(6, 70%, 34%);
+  grid-column: 3/5;
+}
+main .calc-wrapper .calc-buttons-wrapper #equal:hover {
+  background-color: hsl(6, 91%, 66%);
+}
+
+@media screen and (max-width: 320px) {
+  main .calc-wrapper .calc-buttons-wrapper button {
+    padding: 1rem 0.5rem 0.5rem;
+  }
+  main .calc-wrapper .calc-buttons-wrapper .number {
+    font-size: 1.8rem;
+  }
+  main .calc-wrapper .calc-buttons-wrapper #delete,
+  main .calc-wrapper .calc-buttons-wrapper #reset {
+    font-size: 1rem;
+  }
+  main .calc-wrapper .calc-buttons-wrapper #equal {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  main .calc-wrapper {
+    width: 30rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}/*# sourceMappingURL=styles.css.map */

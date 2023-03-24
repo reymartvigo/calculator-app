@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App || Frontend Mentor</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+
+        <!-- MAIN CALC -->
+        <div class="calc-wrapper" id="calc-main-bg">
+
+            <!-- CALC THEME-->
+            <div class="calc-theme-container">
+                <h1>calc</h1>
+
+
+                <!-- CALC THEME WRAPPER-->
+                <div class="calc-theme-wrapper">
+                    <div class="theme-number">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+
+                    <div class="theme-switches-container">
+                        <span>THEME</span>
+                        <div class="switch-wrapper">
+                            <button id="themeOne" aria-label="theme-1-switch"></button>
+                            <button id="themeTwo" aria-label="theme-2-switch"> </button>
+                            <button id="themeThree" aria-label="theme-3-switch"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- CALC THEME WRAPPER-->
+
+
+            </div>
+            <!-- CALC THEME-->
+
+
+            <!--CALC RESULT SCREEN-->
+            <div class="calc-result-wrapper">
+                <h2 id="result"></h2>
+            </div>
+            <!--CALC RESULT SCREEN-->
+
+
+            <!--CALC BUTTONS -->
+            <div class="calc-buttons-wrapper">
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button id="delete">DEL</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator" id="addition">+</button>
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operator" id="subtraction">-</button>
+                <button id="decimal">.</button>
+                <button class="number">0</button>
+                <button class="operator" id="division">/</button>
+                <button class="operator" id="multiplication" value="*">x</button>
+                <button id="reset">RESET</button>
+                <button id="equal">=</button>
+            </div>
+
+            <!--CALC BUTTONS -->
+
+        </div>
+        <!-- MAIN CALC -->
+    </main>
+
+</body>
+
+</html>

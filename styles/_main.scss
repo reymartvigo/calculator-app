@@ -1,0 +1,199 @@
+@use "variable";
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: variable.$Verydarkdesaturatedblue;
+
+  .calc-wrapper {
+    @include variable.display;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
+    width: 100%;
+    height: 100vh;
+
+    .calc-theme-container {
+      @include variable.display;
+      justify-content: space-between;
+      align-items: center;
+      color: variable.$White;
+
+      .calc-theme-wrapper {
+        @include variable.display;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .theme-number {
+          @include variable.display;
+          justify-content: flex-end;
+          padding-right: 0.5rem;
+          gap: 1rem;
+
+          span {
+            font-size: 0.9rem;
+          }
+        }
+
+        .theme-switches-container {
+          @include variable.display;
+          align-items: center;
+          gap: 1.5rem;
+
+          span {
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+          }
+          .switch-wrapper {
+            @include variable.display;
+            background-color: variable.$Verydarkdesaturatedblue2;
+            align-items: center;
+
+            padding: 0.3rem 0.5rem;
+            gap: 0.35rem;
+            border-radius: 1rem;
+            button {
+              background-color: variable.$Red;
+              border-radius: 1rem;
+              cursor: pointer;
+              width: 1rem;
+              height: 1rem;
+              border: none;
+              outline: none;
+            }
+
+            #themeTwo,
+            #themeThree {
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .calc-result-wrapper {
+      @include variable.display;
+      flex-shrink: 0;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      height: 5.5rem;
+      border-radius: 0.8rem;
+      padding: 2rem 1.5rem;
+      color: variable.$White;
+      background-color: variable.$Verydarkdesaturatedblue3;
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .calc-buttons-wrapper {
+      background-color: variable.$Verydarkdesaturatedblue2;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      border-radius: 0.8rem;
+      width: 100%;
+      padding: 1.5rem;
+      grid-column-gap: 10px;
+      grid-row-gap: 15px;
+
+      button {
+        @include variable.display;
+        border: none;
+        outline: none;
+        border-radius: 0.4rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 1.2rem 1rem 0.75rem;
+        font-weight: 700;
+        background-color: variable.$Lightgrayishorange;
+        color: variable.$Desaturateddarkblue2;
+        -webkit-box-shadow: 0px 4px 0px 0px hsl(28, 16%, 65%);
+        box-shadow: 0px 4px 0px 0px hsl(28, 16%, 65%);
+
+        &:hover {
+          background-color: variable.$White;
+        }
+      }
+
+      .number {
+        font-size: 2rem;
+      }
+      .operator {
+        font-size: 2rem;
+      }
+
+      #delete,
+      #reset {
+        -webkit-box-shadow: 0px 4px 0px 0px hsl(224, 28%, 35%);
+        box-shadow: 0px 4px 0px 0px hsl(224, 28%, 35%);
+        background-color: variable.$Desaturateddarkblue1;
+        font-size: 1.2rem;
+        color: variable.$White;
+        &:hover {
+          background-color: hsl(225, 31%, 59%);
+        }
+      }
+
+      #reset {
+        padding: 1.25rem;
+        grid-column: 1/3;
+      }
+
+      #equal {
+        font-size: 1.2rem;
+        color: variable.$White;
+        background-color: variable.$Red;
+        -webkit-box-shadow: 0px 4px 0px 0px hsl(6, 70%, 34%);
+        box-shadow: 0px 4px 0px 0px hsl(6, 70%, 34%);
+        grid-column: 3/5;
+
+        &:hover {
+          background-color: hsl(6, 91%, 66%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main {
+    .calc-wrapper {
+      .calc-buttons-wrapper {
+        button {
+          padding: 1rem 0.5rem 0.5rem;
+        }
+
+        .number {
+          font-size: 1.8rem;
+        }
+
+        #delete,
+        #reset {
+          font-size: 1rem;
+        }
+
+        #equal {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    @include variable.display;
+    justify-content: center;
+
+    height: 100%;
+
+    .calc-wrapper {
+      width: 30rem;
+    }
+  }
+} ;

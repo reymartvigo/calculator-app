@@ -1,0 +1,84 @@
+// Colors
+
+// Theme 1 //
+
+// Backgrounds
+
+$Verydarkdesaturatedblue: hsl(222, 26%, 31%); //(main background)
+$Verydarkdesaturatedblue2: hsl(223, 31%, 20%);
+// (toggle background, keypad background)
+$Verydarkdesaturatedblue3: hsl(224, 36%, 15%); //(screen background)
+
+// Keys
+
+$Desaturateddarkblue1: hsl(225, 21%, 49%); //(key background)
+$Desaturateddarkblue2: hsl(224, 28%, 35%); //  (key shadow)
+
+$Red: hsl(6, 63%, 50%); // (key background, toggle)
+$Darkred: hsl(6, 70%, 34%); // (key shadow)
+
+$Lightgrayishorange: hsl(30, 25%, 89%); // (key background)
+$Grayishorange: hsl(28, 16%, 65%); // (key shadow)
+
+// Text
+
+$Verydarkgrayishblue: hsl(221, 14%, 31%);
+$White: hsl(0, 0%, 100%);
+
+// Theme 2
+
+//Backgrounds
+
+$Lightgray: hsl(0, 0%, 90%); // (main background)
+$Grayishred: hsl(0, 5%, 81%); // (toggle background, keypad background)
+$Verylightgray: hsl(0, 0%, 93%); //(screen background)
+
+// Keys
+
+$Darkmoderatecyan: hsl(185, 42%, 37%); // (key background)
+$Verydarkcyan: hsl(185, 58%, 25%); // (key shadow)
+
+$Orange: hsl(25, 98%, 40%); // (key background, toggle)
+$Darkorange: hsl(25, 99%, 27%); // (key shadow)
+
+$Lightgrayishyellow: hsl(45, 7%, 89%); // (key background)
+$Darkgrayishorange: hsl(35, 11%, 61%); // (key shadow)
+
+// Text
+
+$Verydarkgrayishyellow: hsl(60, 10%, 19%);
+
+// Theme 3
+
+// Backgrounds
+
+$Verydarkviolet: hsl(268, 75%, 9%); // (main background)
+$Verydarkviolet2: hsl(
+  268,
+  71%,
+  12%
+); // (toggle background, keypad background, screen background)
+
+// Keys
+
+$Darkviolet: hsl(281, 89%, 26%); //
+$Vividmagenta: hsl(285, 91%, 52%); // (key shadow)
+
+$Purecyan: hsl(176, 100%, 44%); // (key background, toggle)
+$Softcyan: hsl(177, 92%, 70%); // (key shadow)
+
+$Verydarkviolet3: hsl(268, 47%, 21%); // (key background)
+$Darkmagenta: hsl(290, 70%, 36%); // (key shadow)
+
+// Text
+
+$Lightyellow: hsl(52, 100%, 62%);
+$Verydarkblue: hsl(198, 20%, 13%);
+
+//  Font
+
+$font: "League Spartan", sans-serif;
+
+@mixin display($display: flex) {
+  display: flex;
+}
