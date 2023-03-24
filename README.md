@@ -27,6 +27,12 @@ Users should be able to:
 
 ![image](https://user-images.githubusercontent.com/111113305/227432219-a7242539-9acb-4cca-8edc-231cacba7782.png)
 
+![image](https://user-images.githubusercontent.com/111113305/227432640-043a3046-d39e-47d8-8c9f-794bd36bf08a.png)
+
+![image](https://user-images.githubusercontent.com/111113305/227432671-ffa1d3ca-e096-4dd2-a7d6-155f14d70564.png)
+
+
+
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/calculator-app-using-html-scss-js-mobile-first-L9X8qUdx9P
