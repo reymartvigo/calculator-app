@@ -76,12 +76,12 @@ equalBtn.addEventListener("click", () => {
 
 const savedTheme = localStorage.getItem("theme");
 
-if (savedTheme === "one") {
-  switchToThemeOne();
-} else if (savedTheme === "two") {
+if (savedTheme === "two") {
   switchToThemeTwo();
-} else {
+} else if (savedTheme === "three") {
   switchToThemeThree();
+} else {
+  switchToThemeOne();
 }
 
 // THEME LOCAL STORAGE
